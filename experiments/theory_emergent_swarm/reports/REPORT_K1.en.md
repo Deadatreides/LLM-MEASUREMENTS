@@ -70,6 +70,20 @@ The gap shrank tenfold. The pre-registered threshold `K1-flat` was ≤ 0.12, and
 record's position stopped affecting whether it is found. Individual tail positions gained between
 +0.30 and +0.375.
 
+> **Correction, 2026-10-04.** The explanation "the model says 'no' to late records more and more
+> often" is **wrong**. A reader on Reddit suggested checking it. The check ran on the same data with no
+> new calls: [`scripts/yes_rate_by_position.py`](../scripts/yes_rate_by_position.py) over
+> `metrics/filter_calls.jsonl`. If the model were drifting toward "no", its share of "yes" answers would
+> fall toward the tail. It barely moves:
+>
+> | positions | yes rate | share of matching records | recall | yes on non-matching records |
+> |---|---|---|---|---|
+> | 0–5 | 0.209 | 0.196 | 0.502 | 0.139 |
+> | 12–17 | 0.189 | 0.193 | 0.299 | 0.162 |
+>
+> The model says "yes" about as often, but lands on the wrong records more. What decays toward the tail
+> is **discrimination**, not willingness to say yes. The original wording above is left as it was.
+
 ### 2.2 Decomposition helps WEAK models more than strong ones
 
 Exact set after decoding, full context → blocks:
