@@ -1,0 +1,572 @@
+{
+  "models": [
+    "llama-3.2-1b-instruct-q4_0",
+    "qwen2.5-coder-1.5b-instruct-q4_0",
+    "qwen3-1.7b-q4_0-unsloth",
+    "smollm2-360m-instruct-bartowski-q5_k_m"
+  ],
+  "task_ids": [
+    "CODE_01",
+    "CODE_02",
+    "CODE_03",
+    "CODE_04",
+    "CODE_05",
+    "CODE_06"
+  ],
+  "baseline": {
+    "llama-3.2-1b-instruct-q4_0": {
+      "N=1": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 1.0,
+        "avg_input_tokens_per_task": 95.7,
+        "avg_output_tokens_per_task": 333.5,
+        "avg_total_tokens_per_task": 429.2
+      },
+      "N=2": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 2.0,
+        "avg_input_tokens_per_task": 191.3,
+        "avg_output_tokens_per_task": 657.8,
+        "avg_total_tokens_per_task": 849.2
+      },
+      "N=4": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 4.0,
+        "avg_input_tokens_per_task": 382.7,
+        "avg_output_tokens_per_task": 1357.5,
+        "avg_total_tokens_per_task": 1740.2
+      },
+      "N=8": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 8.0,
+        "avg_input_tokens_per_task": 765.3,
+        "avg_output_tokens_per_task": 2647.0,
+        "avg_total_tokens_per_task": 3412.3
+      }
+    },
+    "qwen2.5-coder-1.5b-instruct-q4_0": {
+      "N=1": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 1.0,
+        "avg_input_tokens_per_task": 89.7,
+        "avg_output_tokens_per_task": 233.5,
+        "avg_total_tokens_per_task": 323.2
+      },
+      "N=2": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 2.0,
+        "avg_input_tokens_per_task": 179.3,
+        "avg_output_tokens_per_task": 435.3,
+        "avg_total_tokens_per_task": 614.7
+      },
+      "N=4": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 4.0,
+        "avg_input_tokens_per_task": 358.7,
+        "avg_output_tokens_per_task": 908.8,
+        "avg_total_tokens_per_task": 1267.5
+      },
+      "N=8": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 8.0,
+        "avg_input_tokens_per_task": 717.3,
+        "avg_output_tokens_per_task": 1936.7,
+        "avg_total_tokens_per_task": 2654.0
+      }
+    },
+    "qwen3-1.7b-q4_0-unsloth": {
+      "N=1": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 1.0,
+        "avg_input_tokens_per_task": 72.7,
+        "avg_output_tokens_per_task": 214.2,
+        "avg_total_tokens_per_task": 286.8
+      },
+      "N=2": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 2.0,
+        "avg_input_tokens_per_task": 145.3,
+        "avg_output_tokens_per_task": 420.8,
+        "avg_total_tokens_per_task": 566.2
+      },
+      "N=4": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 4.0,
+        "avg_input_tokens_per_task": 290.7,
+        "avg_output_tokens_per_task": 864.5,
+        "avg_total_tokens_per_task": 1155.2
+      },
+      "N=8": {
+        "n_tasks": 6,
+        "solved_rate": 1.0,
+        "n_solved": 6,
+        "avg_calls_per_task": 8.0,
+        "avg_input_tokens_per_task": 581.3,
+        "avg_output_tokens_per_task": 1807.7,
+        "avg_total_tokens_per_task": 2389.0
+      }
+    },
+    "smollm2-360m-instruct-bartowski-q5_k_m": {
+      "N=1": {
+        "n_tasks": 6,
+        "solved_rate": 0.667,
+        "n_solved": 4,
+        "avg_calls_per_task": 1.0,
+        "avg_input_tokens_per_task": 95.5,
+        "avg_output_tokens_per_task": 119.5,
+        "avg_total_tokens_per_task": 215.0
+      },
+      "N=2": {
+        "n_tasks": 6,
+        "solved_rate": 0.667,
+        "n_solved": 4,
+        "avg_calls_per_task": 2.0,
+        "avg_input_tokens_per_task": 191.0,
+        "avg_output_tokens_per_task": 194.8,
+        "avg_total_tokens_per_task": 385.8
+      },
+      "N=4": {
+        "n_tasks": 6,
+        "solved_rate": 0.667,
+        "n_solved": 4,
+        "avg_calls_per_task": 4.0,
+        "avg_input_tokens_per_task": 382.0,
+        "avg_output_tokens_per_task": 357.8,
+        "avg_total_tokens_per_task": 739.8
+      },
+      "N=8": {
+        "n_tasks": 6,
+        "solved_rate": 0.833,
+        "n_solved": 5,
+        "avg_calls_per_task": 8.0,
+        "avg_input_tokens_per_task": 764.0,
+        "avg_output_tokens_per_task": 674.2,
+        "avg_total_tokens_per_task": 1438.2
+      }
+    }
+  },
+  "pipeline": {
+    "llama-3.2-1b-instruct-q4_0": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.778,
+        "attempt_level_final_solved_rate": 0.778,
+        "task_level_solved_rate_any_attempt_initial": 0.833,
+        "task_level_solved_rate_any_attempt_final": 0.833,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.0,
+        "avg_input_tokens": 859.1,
+        "avg_output_tokens": 773.4,
+        "avg_total_tokens": 1632.5,
+        "avg_wall_time_sec": 12.881,
+        "avg_generation_time_sec": 11.792,
+        "avg_mutation_score_a2": 1.0,
+        "n_repaired_attempts": 0,
+        "patch_success_rate": null,
+        "patch_regression_rate": null,
+        "n_initial_fail": 4,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 1.0775,
+          "solved_task_per_wall_sec": 0.0647
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.667,
+        "attempt_level_final_solved_rate": 0.667,
+        "task_level_solved_rate_any_attempt_initial": 0.833,
+        "task_level_solved_rate_any_attempt_final": 0.833,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.94,
+        "avg_input_tokens": 1235.5,
+        "avg_output_tokens": 892.3,
+        "avg_total_tokens": 2127.8,
+        "avg_wall_time_sec": 14.858,
+        "avg_generation_time_sec": 13.623,
+        "avg_mutation_score_a2": 0.944,
+        "n_repaired_attempts": 17,
+        "patch_success_rate": 0.0,
+        "patch_regression_rate": 0.0,
+        "n_initial_fail": 6,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 0.9339,
+          "solved_task_per_wall_sec": 0.05609
+        }
+      }
+    },
+    "qwen2.5-coder-1.5b-instruct-q4_0": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 1.0,
+        "attempt_level_final_solved_rate": 1.0,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.0,
+        "avg_input_tokens": 892.0,
+        "avg_output_tokens": 574.1,
+        "avg_total_tokens": 1466.1,
+        "avg_wall_time_sec": 12.825,
+        "avg_generation_time_sec": 11.834,
+        "avg_mutation_score_a2": 0.993,
+        "n_repaired_attempts": 0,
+        "patch_success_rate": null,
+        "patch_regression_rate": null,
+        "n_initial_fail": 0,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 1.742,
+          "solved_task_per_wall_sec": 0.07797
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.944,
+        "attempt_level_final_solved_rate": 1.0,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.72,
+        "avg_input_tokens": 1225.2,
+        "avg_output_tokens": 637.4,
+        "avg_total_tokens": 1862.6,
+        "avg_wall_time_sec": 14.665,
+        "avg_generation_time_sec": 13.489,
+        "avg_mutation_score_a2": 0.993,
+        "n_repaired_attempts": 13,
+        "patch_success_rate": 0.077,
+        "patch_regression_rate": 0.0,
+        "n_initial_fail": 1,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 1.5689,
+          "solved_task_per_wall_sec": 0.06819
+        }
+      }
+    },
+    "qwen3-1.7b-q4_0-unsloth": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.944,
+        "attempt_level_final_solved_rate": 0.944,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.0,
+        "avg_input_tokens": 773.6,
+        "avg_output_tokens": 354.9,
+        "avg_total_tokens": 1128.5,
+        "avg_wall_time_sec": 5.735,
+        "avg_generation_time_sec": 4.835,
+        "avg_mutation_score_a2": 0.938,
+        "n_repaired_attempts": 0,
+        "patch_success_rate": null,
+        "patch_regression_rate": null,
+        "n_initial_fail": 1,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 2.8173,
+          "solved_task_per_wall_sec": 0.17436
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.833,
+        "attempt_level_final_solved_rate": 0.833,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.5,
+        "avg_input_tokens": 977.6,
+        "avg_output_tokens": 373.7,
+        "avg_total_tokens": 1351.2,
+        "avg_wall_time_sec": 6.376,
+        "avg_generation_time_sec": 5.377,
+        "avg_mutation_score_a2": 0.944,
+        "n_repaired_attempts": 9,
+        "patch_success_rate": 0.0,
+        "patch_regression_rate": 0.0,
+        "n_initial_fail": 3,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 2.6762,
+          "solved_task_per_wall_sec": 0.15685
+        }
+      },
+      "PIPELINE_2R2": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.889,
+        "attempt_level_final_solved_rate": 0.889,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 4.11,
+        "avg_input_tokens": 1212.2,
+        "avg_output_tokens": 393.8,
+        "avg_total_tokens": 1606.1,
+        "avg_wall_time_sec": 6.691,
+        "avg_generation_time_sec": 5.583,
+        "avg_mutation_score_a2": 0.917,
+        "n_repaired_attempts": 10,
+        "patch_success_rate": 0.0,
+        "patch_regression_rate": 0.0,
+        "n_initial_fail": 2,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 2.5391,
+          "solved_task_per_wall_sec": 0.14945
+        }
+      },
+      "PIPELINE_3": {
+        "n_attempts": 6,
+        "attempt_level_initial_solved_rate": 1.0,
+        "attempt_level_final_solved_rate": 1.0,
+        "task_level_solved_rate_any_attempt_initial": 1.0,
+        "task_level_solved_rate_any_attempt_final": 1.0,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 5.0,
+        "avg_input_tokens": 1291.7,
+        "avg_output_tokens": 430.7,
+        "avg_total_tokens": 1722.3,
+        "avg_wall_time_sec": 6.77,
+        "avg_generation_time_sec": 5.499,
+        "avg_mutation_score_a2": 0.833,
+        "n_repaired_attempts": 0,
+        "patch_success_rate": null,
+        "patch_regression_rate": null,
+        "n_initial_fail": 0,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 2.322,
+          "solved_task_per_wall_sec": 0.14772
+        }
+      }
+    },
+    "smollm2-360m-instruct-bartowski-q5_k_m": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.611,
+        "attempt_level_final_solved_rate": 0.611,
+        "task_level_solved_rate_any_attempt_initial": 0.667,
+        "task_level_solved_rate_any_attempt_final": 0.667,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 3.0,
+        "avg_input_tokens": 827.9,
+        "avg_output_tokens": 479.6,
+        "avg_total_tokens": 1307.6,
+        "avg_wall_time_sec": 8.925,
+        "avg_generation_time_sec": 7.757,
+        "avg_mutation_score_a2": 1.0,
+        "n_repaired_attempts": 0,
+        "patch_success_rate": null,
+        "patch_regression_rate": null,
+        "n_initial_fail": 7,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 1.39,
+          "solved_task_per_wall_sec": 0.0747
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "attempt_level_initial_solved_rate": 0.667,
+        "attempt_level_final_solved_rate": 0.667,
+        "task_level_solved_rate_any_attempt_initial": 0.833,
+        "task_level_solved_rate_any_attempt_final": 0.833,
+        "n_tasks_present": 6,
+        "avg_llm_calls": 4.0,
+        "avg_input_tokens": 1209.9,
+        "avg_output_tokens": 682.5,
+        "avg_total_tokens": 1892.4,
+        "avg_wall_time_sec": 12.608,
+        "avg_generation_time_sec": 11.33,
+        "avg_mutation_score_a2": 1.0,
+        "n_repaired_attempts": 18,
+        "patch_success_rate": 0.0,
+        "patch_regression_rate": 0.0,
+        "n_initial_fail": 6,
+        "economics": {
+          "solved_task_per_1k_output_tokens": 1.221,
+          "solved_task_per_wall_sec": 0.0661
+        }
+      }
+    }
+  },
+  "drift": {
+    "llama-3.2-1b-instruct-q4_0": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 14,
+          "USEFUL": 4
+        },
+        "drift_rate": 0.222,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 1.0,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 14
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 11,
+          "USEFUL": 6,
+          "CORRECT_ACCEPT": 1
+        },
+        "drift_rate": 0.333,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 0.917,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 11,
+          "CASE1_a2good_a3bad": 2,
+          "CASE4_a2_detects_a3_error": 2
+        }
+      }
+    },
+    "qwen2.5-coder-1.5b-instruct-q4_0": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 14,
+          "CORRECT_ACCEPT": 4
+        },
+        "drift_rate": 0.0,
+        "drift_caught_rate": null,
+        "false_accept_rate": null,
+        "false_reject_rate": 0.778,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 14
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 12,
+          "CORRECT_ACCEPT": 5,
+          "USEFUL": 1
+        },
+        "drift_rate": 0.056,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 0.706,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 12
+        }
+      }
+    },
+    "qwen3-1.7b-q4_0-unsloth": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 11,
+          "CORRECT_ACCEPT": 6,
+          "USEFUL": 1
+        },
+        "drift_rate": 0.056,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 0.647,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 10
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 7,
+          "CORRECT_ACCEPT": 8,
+          "MISSED_DANGEROUS": 1,
+          "USEFUL": 2
+        },
+        "drift_rate": 0.167,
+        "drift_caught_rate": 0.667,
+        "false_accept_rate": 0.333,
+        "false_reject_rate": 0.467,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 7,
+          "CASE3_both_bad_but_seam_passes": 1,
+          "CASE5_seam_passes_but_reference_fails": 1
+        }
+      },
+      "PIPELINE_2R2": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 8,
+          "CORRECT_ACCEPT": 8,
+          "USEFUL": 2
+        },
+        "drift_rate": 0.111,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 0.5,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 8
+        }
+      },
+      "PIPELINE_3": {
+        "n_attempts": 6,
+        "drift_counts": {
+          "FALSE": 3,
+          "CORRECT_ACCEPT": 3
+        },
+        "drift_rate": 0.0,
+        "drift_caught_rate": null,
+        "false_accept_rate": null,
+        "false_reject_rate": 0.5,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 3
+        }
+      }
+    },
+    "smollm2-360m-instruct-bartowski-q5_k_m": {
+      "PIPELINE_1": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 11,
+          "USEFUL": 7
+        },
+        "drift_rate": 0.389,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 1.0,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 11,
+          "CASE1_a2good_a3bad": 1,
+          "CASE4_a2_detects_a3_error": 1
+        }
+      },
+      "PIPELINE_2": {
+        "n_attempts": 18,
+        "drift_counts": {
+          "FALSE": 12,
+          "USEFUL": 6
+        },
+        "drift_rate": 0.333,
+        "drift_caught_rate": 1.0,
+        "false_accept_rate": 0.0,
+        "false_reject_rate": 1.0,
+        "case_counts": {
+          "CASE2_a2bad_a3good": 12
+        }
+      }
+    }
+  }
+}
