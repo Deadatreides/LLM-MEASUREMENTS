@@ -131,6 +131,29 @@ broken version, not that the asserts themselves are right. A2 systematically inv
 too-narrow expectations (see the example below) that have nothing to do with the real behaviour described
 in the task.
 
+> **Correction, 2026-10-05.** A reader on Reddit pointed out that a suite which fails the correct reference
+> usually fails every mutant of it too, so its high mutation score comes for free. Checked on the same
+> data, no new calls: [`metrics/reanalyse_a2_reference.py`](metrics/reanalyse_a2_reference.py) over `runs/`.
+>
+> | suites | n | mean mutation score | perfect |
+> |---|---|---|---|
+> | accepted the reference | 39 | 0.888 | 29 |
+> | rejected the reference | 129 | 0.988 | 126 |
+>
+> Why the 129 suites rejected the reference:
+>
+> | cause | suites |
+> |---|---|
+> | wrong asserts | 59 |
+> | syntax error | 39 |
+> | no test functions | 29 |
+> | crashed on run | 2 |
+>
+> So 42% of the suites did not run at all, and of the 98 that ran, 60% rejected the correct reference.
+> The conclusion "a high mutation score does not mean the tests are correct" stands. The figure "81% of
+> perfect suites rejected the reference" is mostly an artifact: a broken suite gets a perfect score for
+> free. The original text above is left as it was.
+
 ### Concrete example (CASE 3 / CASE 5, section 10 of the spec)
 
 `qwen3-1.7b-q4_0-unsloth--CODE_04--PIPELINE_2--a1` (task count_vowels):
