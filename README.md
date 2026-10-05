@@ -32,6 +32,10 @@ file, it is a bug — open an issue.
 
 ## Layout
 
+Most reports are written in Russian. English versions sit next to them with an `.en.md` suffix, for
+example `REPORT_K1.en.md` and `REPORT_PIPELINE.en.md`. A file without a suffix is the Russian original,
+and the original wins if the two disagree.
+
 ```
 experiments/     ~70 directories, one per experiment
   <name>/

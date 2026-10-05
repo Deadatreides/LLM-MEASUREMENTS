@@ -1,8 +1,9 @@
-# K1: an Albert Kahn design office as a swarm architecture — English summary
+# K1: an Albert Kahn design office as a swarm architecture — English version
 
 Translated from the Russian original, [`REPORT_K1.md`](REPORT_K1.md). The protocol was written before
-any new call and is in [`../PROTOCOL_K1.md`](../PROTOCOL_K1.md) (Russian). If this summary and the
-original disagree, the original wins.
+any new call: [`../PROTOCOL_K1.en.md`](../PROTOCOL_K1.en.md) (English) and
+[`../PROTOCOL_K1.md`](../PROTOCOL_K1.md) (Russian original). If this version and the original disagree,
+the original wins.
 
 The run made 720 live calls in 614 s. The full-context baseline was re-used from disk, with 0 new
 calls. Thresholds were not moved.
